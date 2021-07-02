@@ -52,7 +52,7 @@ In the original code, the computer is holding onto the data like a person might 
 
 &emsp;Next i
 
-*Call the next iteration*
+*The program then begins the next iteration*
 
 &emsp;For i = 0 To 11
 
@@ -60,7 +60,7 @@ In the original code, the computer is holding onto the data like a person might 
 
 &emsp;&emsp;totalVolume = 0
             
-*Reactivate the data worksheet*
+*And reactivates the data worksheet*
 
 &emsp;Worksheets(yearValue).Activate
 
