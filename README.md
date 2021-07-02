@@ -34,7 +34,7 @@ In the original code, the computer is holding onto the data like a person might 
 
 &emsp;For i...
 
-&emsp;&emsp; *Program calls the ticker, sets volume variable to 0, and runs through all if statements*
+*Program calls the ticker, sets volume variable to 0, and runs through all if statements*
 
 *Then the program activates the output worksheet*
 
