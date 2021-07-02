@@ -72,7 +72,6 @@ The refactored code stores the information within the arrays as it iterates thro
 
 &emsp;Next k
 
-
 The run times were around 0.83 seconds for each year of stock analyzed.
  
 Once refactored, the run time for the same same stock data decreased by about 0.69 seconds *(Figure 1 and Figure 2)*.
