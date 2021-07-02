@@ -20,7 +20,49 @@ The arrays hold onto the data for the report as the program moves through each t
 
 &emsp;&emsp;tickerStartingPrices(tickerIndex) = Cells(j, 6).Value
 
-In the original code, the computer is holding on to the data like a person might when using their short term memory. It is there, then it is used immediately and (as happens to the best of us) is forgotten. Where the refactored code is sotring the information within the arrays to hold onto until the iterations are complete on one spreadsheet before it has to switch to the next spreadsheet. Because of this difference, the computer can iterate through the data more efficiently. Once iterating through the data, the computer can then activate the next worksheet and output the data. It's like the difference between multi-tasking and focusing on one task at a time. The work will get done, but multi-tasking will take longer because it is less efficient.
+In the original code, the computer is holding onto the data like a person might when using their short term memory. It is there, then it is used immediately and (as happens to the best of us) is forgotten. This output is nested within the for loop holding all the if statements, so the computer runs through all the rows associated with one ticker then outputs the data before moving to the next ticker. This means the computer must activate a separate worksheet each time it iterates through a ticker.
+
+*Original program code output*
+
+*Activate the output worksheet*
+&emsp;Worksheets("All Stocks Analysis").Activate
+
+*Output data*
+
+&emsp;Cells(4 + i, 1).Value = ticker
+
+&emsp;Cells(4 + i, 2).Value = totalVolume
+
+&emsp;Cells(4 + i, 3).Value = endingPrice / startingPrice - 1
+
+*End the first iteration*
+
+&emsp;Next i
+
+*Call the next iteration*
+&emsp;For i = 0 To 11
+&emsp;&emsp;ticker = tickers(i)
+&emsp;&emsp;totalVolume = 0
+            
+*Reactivate the data worksheet*
+&emsp;Worksheets(yearValue).Activate
+
+The refactored code stores the information within the arrays as it iterates through all the tickers. Because of this difference, the computer can iterate through the data more efficiently. Once iterating through all the data in one worksheet, the computer can then activate the next worksheet and output the data. It's like the difference between multi-tasking and focusing on one task at a time. The work will get done, but multi-tasking will take longer because it is less efficient when you are switching between two different tasks. The output is completed in its own for loop at the end of the program just before formatting the cells.
+
+*Activates the output worksheet.*
+
+&emsp;Worksheets("All Stocks Analysis").Activate
+
+*Loops through each array to output the ticker, volume, and return*
+
+&emsp;For k = 0 To 11
+        
+&emsp;&emsp;Cells(4 + k, 1).Value = tickers(k)
+&emsp;&emsp;Cells(4 + k, 2).Value = tickerVolumes(k)
+&emsp;&emsp;Cells(4 + k, 3).Value = tickerEndingPrices(k) / tickerStartingPrices(k) - 1
+
+&emsp;Next k
+
 
 The run times were around 0.83 seconds for each year of stock analyzed.
  
