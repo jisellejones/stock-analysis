@@ -83,7 +83,7 @@ The refactored code stores the information within the arrays as it iterates thro
 &emsp;Next k
 
 
-For the original program, the run times were around 0.83 seconds for each year of stock analyzed.
+In the original program, the run times were around 0.83 seconds for each year of stock analyzed.
  
 Once refactored, the run times for the same same data decreased by about 0.69 seconds *(Figure 1 and Figure 2)*.
 
@@ -91,7 +91,7 @@ Once refactored, the run times for the same same data decreased by about 0.69 se
 
 ![2017_Refactored_Run_Time](https://github.com/jisellejones/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png)
 
-*Figure 2 - 2017 Refactored Run Time*
+*Figure 2 - 2018 Refactored Run Time*
 
 ![2018_Refactored_Run_Time](https://github.com/jisellejones/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png)
 
