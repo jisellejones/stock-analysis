@@ -34,13 +34,13 @@ In the original code, the computer is holding onto the data like a person might 
 
 &emsp;For i...
 
-*Program calls the ticker, sets volume variable to 0, and runs through all if statements*
+*The program calls the ticker, sets the volume variable to 0, and runs through all if statements.*
 
-*Then the program activates the output worksheet*
+*Then the program activates the output worksheet.*
 
 &emsp;Worksheets("All Stocks Analysis").Activate
 
-*Then outputs data*
+*Then outputs the data.*
 
 &emsp;Cells(4 + i, 1).Value = ticker
 
@@ -52,7 +52,7 @@ In the original code, the computer is holding onto the data like a person might 
 
 &emsp;Next i
 
-*The program then begins the next iteration*
+*The program then begins the next iteration.*
 
 &emsp;For i = 0 To 11
 
@@ -60,7 +60,7 @@ In the original code, the computer is holding onto the data like a person might 
 
 &emsp;&emsp;totalVolume = 0
             
-*And reactivates the data worksheet*
+*And reactivates the worksheet where the data is stored.*
 
 &emsp;Worksheets(yearValue).Activate
 
