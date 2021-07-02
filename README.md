@@ -64,7 +64,7 @@ In the original code, the computer is holding onto the data like a person might 
 
 &emsp;Worksheets(yearValue).Activate
 
-The refactored code stores the information within the arrays as it iterates through all the tickers. Because of this difference, the computer can iterate through the data more efficiently. Once iterating through all the data in one worksheet, the computer can then activate the next worksheet and output the data. It's like the difference between multi-tasking and focusing on one task at a time. The work will get done, but multi-tasking will take longer because it is less efficient when you are switching between two different tasks. The output is completed in its own for loop at the end of the program just before formatting the cells.
+The refactored code stores the information within the arrays as it iterates through all the tickers. Because of this difference, the computer can iterate through the data more efficiently. Once iterating through all the data in one worksheet, the computer can then activate the next worksheet and output the data. It's like the difference between multi-tasking and focusing on one task at a time. The work will get done, but multi-tasking will take longer because it is less efficient when you are switching between two different tasks.
 
 *Activates the output worksheet.*
 
