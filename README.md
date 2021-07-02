@@ -66,11 +66,11 @@ In the original code, the computer is holding onto the data like a person might 
 
 The refactored code stores the information within the arrays as it iterates through all the tickers. Because of this difference, the computer can iterate through the data more efficiently. Once iterating through all the data in one worksheet, the computer can then activate the next worksheet and output the data. It's like the difference between multi-tasking and focusing on one task at a time. The work will get done, but multi-tasking will take longer because it is less efficient when you are switching between two different tasks.
 
-*Activates the output worksheet.*
+*The program has already iterated through all the ticker data in the data worksheet and now activates the output worksheet.*
 
 &emsp;Worksheets("All Stocks Analysis").Activate
 
-*Loops through each array to output the ticker, volume, and return*
+*Then it loops through each array to output each ticker type, volume value, and return value.*
 
 &emsp;For k = 0 To 11
         
@@ -80,9 +80,10 @@ The refactored code stores the information within the arrays as it iterates thro
 
 &emsp;Next k
 
-The run times were around 0.83 seconds for each year of stock analyzed.
+
+For the original program, the run times were around 0.83 seconds for each year of stock analyzed.
  
-Once refactored, the run time for the same same stock data decreased by about 0.69 seconds *(Figure 1 and Figure 2)*.
+Once refactored, the run times for the same same data decreased by about 0.69 seconds *(Figure 1 and Figure 2)*.
 
 *Figure 1- 2017 Refactored Run Time*
 
