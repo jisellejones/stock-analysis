@@ -28,7 +28,7 @@ The arrays hold onto the data for the report as the program moves through each t
 
 &emsp;&emsp;tickerStartingPrices(tickerIndex) = Cells(j, 6).Value
 
-In the original code, the computer is holding onto the data like a person might when using their short term memory. It is there, then it is used immediately and (as happens to the best of us) is forgotten. This output is nested within the for loop holding all the if statements, so the computer runs through all the rows associated with one ticker then outputs the data before moving to the next ticker. This means the computer must activate a separate worksheet each time it iterates through a ticker.
+In the original code, the computer is holding onto the data like a person might when using their short term memory. It is only meant to be held for a short period of time and used immediately then (as happens to the best of us) is forgotten. This output is nested within the for loop holding all the if statements, so the computer runs through all the rows associated with one ticker then outputs the data before moving to the next ticker. This means the computer must activate a separate worksheet each time it iterates through a ticker.
 
 *Original program code activating worksheet and outputting data with in the for loop*
 
