@@ -8,11 +8,17 @@ The original code was written to loop through 12 different types of stock data c
 
 The arrays hold onto the data for the report as the program moves through each ticker. The tickerIndex moves to the next ticker with each iteration for the initial For loop. The for loop and conditional statements are similar in setup; however, the difference between the code is how the numbers are being stored as the computer iterates through the program. 
 
-*Original program code:*
+*Original program code*
 
 &emsp;If Cells(j, 1).Value = ticker And Cells(j - 1, 1).Value <> ticker Then
 
 &emsp;&emsp;startingPrice = Cells(j, 6).Value
+
+*Refactored program code*
+
+&emsp;If Cells(j, 1).Value = tickers(tickerIndex) And Cells(j - 1, 1) <> tickers(tickerIndex) Then
+
+&emsp;&emsp;tickerStartingPrices(tickerIndex) = Cells(j, 6).Value
 
 In the original code, the computer is holding on to the data like a person might when using their short term memory. It is there, then it is used immediately and (as happens to the best of us) is forgotten. Where the refactored code is sotring the information within the arrays to hold onto until the iterations are complete on one spreadsheet before it has to switch to the next spreadsheet. Because of this difference, the computer can iterate through the data more efficiently. Once iterating through the data, the computer can then activate the next worksheet and output the data. It's like the difference between multi-tasking and focusing on one task at a time. The work will get done, but multi-tasking will take longer because it is less efficient.
 
