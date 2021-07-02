@@ -6,12 +6,13 @@ The program under analysis was written to analyze the daily volume and return on
 ## Results
   For the original code, run times were around 0.83 seconds for each year of stock analyzed (*Figure 1 and Figure 2)*.
  
- *Figure 1*
+*Figure 1*
  
- ![2017 Original_Run_Time](https://github.com/jisellejones/stock-analysis/blob/main/Resources/2017_Original_Run_Time.png)
+![2017 Original_Run_Time](https://github.com/jisellejones/stock-analysis/blob/main/Resources/2017_Original_Run_Time.png)
  
- *Figure 2*
- ![2018_Original_Run_Time](https://github.com/jisellejones/stock-analysis/blob/main/Resources/2018_Original_Run_Time.png)
+*Figure 2*
+
+![2018_Original_Run_Time](https://github.com/jisellejones/stock-analysis/blob/main/Resources/2018_Original_Run_Time.png)
  
   
 ###
