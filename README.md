@@ -10,8 +10,8 @@ The arrays hold onto the data for the report as the program moves through each t
 
 *Original program code:*
 
- If Cells(j, 1).Value = ticker And Cells(j - 1, 1).Value <> ticker Then
-  startingPrice = Cells(j, 6).Value
+&emsp;If Cells(j, 1).Value = ticker And Cells(j - 1, 1).Value <> ticker Then
+&emsp;&emsp;startingPrice = Cells(j, 6).Value
 
 In the original code, the computer is holding on to the data like a person might when using their short term memory. It is there, then it is used immediately and (as happens to the best of us) is forgotten. Where the refactored code is sotring the information within the arrays to hold onto until the iterations are complete on one spreadsheet before it has to switch to the next spreadsheet. Because of this difference, the computer can iterate through the data more efficiently. Once iterating through the data, the computer can then activate the next worksheet and output the data. It's like the difference between multi-tasking and focusing on one task at a time. The work will get done, but multi-tasking will take longer because it is less efficient.
 
