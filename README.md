@@ -8,13 +8,13 @@ The original code was written to loop through 12 different types of stock data c
 
 The arrays hold onto the data for the report as the program moves through each ticker. The tickerIndex moves to the next ticker with each iteration for the initial For loop. The for loop and conditional statements are similar in setup; however, the difference between the code is how the numbers are being stored as the computer iterates through the program. 
 
-*Original program code*
+*Original program code determining starting price and holding as a variable*
 
 &emsp;If Cells(j, 1).Value = ticker And Cells(j - 1, 1).Value <> ticker Then
 
 &emsp;&emsp;startingPrice = Cells(j, 6).Value
 
-*Refactored program code*
+*Refactored program code determining starting price and holding within an array*
 
 &emsp;If Cells(j, 1).Value = tickers(tickerIndex) And Cells(j - 1, 1) <> tickers(tickerIndex) Then
 
@@ -22,12 +22,17 @@ The arrays hold onto the data for the report as the program moves through each t
 
 In the original code, the computer is holding onto the data like a person might when using their short term memory. It is there, then it is used immediately and (as happens to the best of us) is forgotten. This output is nested within the for loop holding all the if statements, so the computer runs through all the rows associated with one ticker then outputs the data before moving to the next ticker. This means the computer must activate a separate worksheet each time it iterates through a ticker.
 
-*Original program code output*
+*Original program code activating worksheet and outputting data with in the for loop*
 
-*Activate the output worksheet*
+&emsp;For i...
+
+&emsp;&emsp; *Program calls the ticker, sets volume variable to 0, and runs through all if statements*
+
+*Then the program activates the output worksheet*
+
 &emsp;Worksheets("All Stocks Analysis").Activate
 
-*Output data*
+*Then outputs data*
 
 &emsp;Cells(4 + i, 1).Value = ticker
 
@@ -35,16 +40,20 @@ In the original code, the computer is holding onto the data like a person might 
 
 &emsp;Cells(4 + i, 3).Value = endingPrice / startingPrice - 1
 
-*End the first iteration*
+*And ends the first iteration*
 
 &emsp;Next i
 
 *Call the next iteration*
+
 &emsp;For i = 0 To 11
+
 &emsp;&emsp;ticker = tickers(i)
+
 &emsp;&emsp;totalVolume = 0
             
 *Reactivate the data worksheet*
+
 &emsp;Worksheets(yearValue).Activate
 
 The refactored code stores the information within the arrays as it iterates through all the tickers. Because of this difference, the computer can iterate through the data more efficiently. Once iterating through all the data in one worksheet, the computer can then activate the next worksheet and output the data. It's like the difference between multi-tasking and focusing on one task at a time. The work will get done, but multi-tasking will take longer because it is less efficient when you are switching between two different tasks. The output is completed in its own for loop at the end of the program just before formatting the cells.
