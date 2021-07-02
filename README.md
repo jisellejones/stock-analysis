@@ -10,11 +10,11 @@ Once refactored, the run time for the same same stock data decreased by about 0.
 
 *Figure 3 2017 Refactored Run Time*
 
-![2017_Refactored_Run_Time](https://github.com/jisellejones/stock-analysis/blob/main/Resources/2017_Refactored_Run_Time.png)
+![2017_Refactored_Run_Time](https://github.com/jisellejones/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png)
 
 *Figure 4 2017 Refactored Run Time*
 
-![2018_Refactored_Run_Time](https://github.com/jisellejones/stock-analysis/blob/main/Resources/2018_Refactored_Run_Time.png)
+![2018_Refactored_Run_Time](https://github.com/jisellejones/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png)
 
 
 ## Summary
