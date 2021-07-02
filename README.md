@@ -75,7 +75,9 @@ The refactored code stores the information within the arrays as it iterates thro
 &emsp;For k = 0 To 11
         
 &emsp;&emsp;Cells(4 + k, 1).Value = tickers(k)
+
 &emsp;&emsp;Cells(4 + k, 2).Value = tickerVolumes(k)
+
 &emsp;&emsp;Cells(4 + k, 3).Value = tickerEndingPrices(k) / tickerStartingPrices(k) - 1
 
 &emsp;Next k
